@@ -1,0 +1,33 @@
+ /*from 1-2*/d01= new Date("May 18, 2020 17:30:00"); d1 = d01.getTime();//d1 = new Date(2020,05,18);
+    d11 = d01.getHours();  d11m= d01.getMinutes();
+    // Military Add 2 hrs  5-17
+    var d02=new Date(d01);d02.setMinutes(d02.getMinutes() + 60); var d22=d02.getHours(); var d22m=d02.getMinutes();
+    /*break 3*/var d03=new Date(d02); d03.setMinutes(d03.getMinutes()+15); var d33=d03.getHours(); var d33m=d03.getMinutes();
+    
+    /*from 3-4*/var d04=new Date(d03); d04.setMinutes(d04.getMinutes()+60); var d44=d04.getHours(); var d44m=d04.getMinutes();
+    /*break 5*/var d05=new Date(d04);d05.setMinutes(d05.getMinutes() + 15); var d55=d05.getHours(); var d55m=d05.getMinutes();
+    
+/* console.log( "period from ("+(d11)+":"+d11m+") "+"to ("+(d22)+":"+d22m+") "+"total ("+"1.00"+")");
+console.log( "break  from "+"("+(d22)+":"+(d22m)+")"+" to "+"("+(d33)+":"+(d33m)+")"+" total ("+"0.25"+")\n");
+
+console.log( "period from ("+(d33)+":"+d33m+") "+"to ("+(d44)+":"+d44m+") "+"total ("+"1.00"+")");
+console.log( "break  from "+"("+(d44)+":"+(d44m)+")"+" to "+"("+(d55)+":"+(d55m)+")"+" total ("+"0.25"+")\n");  */
+// afternoon
+console.log( "period from ("+(d11-12)+":"+d11m+") "+"to ("+(d22-12)+":"+d22m+") "+"total ("+"1.00"+")");
+console.log( "break  from "+"("+(d22-12)+":"+(d22m)+")"+" to "+"("+(d33-12)+":"+(d33m)+")"+" total ("+"0.25"+")\n");
+
+console.log( "period from ("+(d33-12)+":"+d33m+") "+"to ("+(d44-12)+":"+d44m+") "+"total ("+"1.00"+")");
+console.log( "break  from "+"("+(d44-12)+":"+(d44m)+")"+" to "+"("+(d55-12)+":"+(d55m)+")"+" total ("+"0.25"+")\n");
+
+/*  01 p.m. 1300  
+    02 p.m. 1400
+    03 p.m. 1500
+    04 p.m. 1600
+    05 p.m. 1700
+    06 p.m. 1800
+    07 p.m. 1900
+    08 p.m. 2000
+    09 p.m. 2100
+    10 p.m. 2200
+    11 p.m. 2300
+    12 p.m. 2400    */
