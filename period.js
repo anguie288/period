@@ -1,4 +1,4 @@
-function diff(d1, d2) {var diff = d2 - d1;var diffInHours = diff/1000/60/60;return Math.abs(diffInHours); }d1=d01.getTime();d2=d01.getTime();d3=d03.getTime();d4=d04.getTime();d5=d05.getTime();              
+function diff(d1, d2) {var diff = d2 - d1;var diffInHours = diff/1000/60/60;return Math.abs(diffInHours); }              
 // Military Add 2 hrs  5-17
     /*from 1-2*/d01= new Date("May 20, 2020 12:30:00"); d11 = d01.getHours();d11m= d01.getMinutes();//d1=d01.getTime();d1=new Date(2020,05,18); 
     /*from 1-2*/var d02=new Date(d01);d02.setMinutes(d02.getMinutes() + 60); var d22=d02.getHours(); var d22m=d02.getMinutes();
@@ -6,6 +6,8 @@ function diff(d1, d2) {var diff = d2 - d1;var diffInHours = diff/1000/60/60;retu
     
     /*from 3-4*/var d04=new Date(d03); d04.setMinutes(d04.getMinutes()+60); var d44=d04.getHours(); var d44m=d04.getMinutes();
     /*break 5*/var d05=new Date(d04);d05.setMinutes(d05.getMinutes() + 15); var d55=d05.getHours(); var d55m=d05.getMinutes();
+    
+    d1=d01.getTime();d2=d02.getTime();d3=d03.getTime();d4=d04.getTime();d5=d05.getTime();
     
 /* console.log( "period*("+(d11)+":"+d11m+") "+"to ("+(d22)+":"+d22m+") "+"sum ("+"1.00"+")");
 console.log( "break--"+"("+(d22)+":"+(d22m)+")"+" to "+"("+(d33)+":"+(d33m)+")"+" sum ("+"0.25"+")\n");
