@@ -1,4 +1,4 @@
-    // Military Add 2 hrs  5-17
+// Military Add 2 hrs  5-17
     /*from 1-2*/d01= new Date("May 18, 2020 17:30:00"); d11 = d01.getHours();d11m= d01.getMinutes();//d1=d01.getTime();d1=new Date(2020,05,18); 
     /*from 1-2*/var d02=new Date(d01);d02.setMinutes(d02.getMinutes() + 60); var d22=d02.getHours(); var d22m=d02.getMinutes();
     /*break 3*/var d03=new Date(d02); d03.setMinutes(d03.getMinutes()+15); var d33=d03.getHours(); var d33m=d03.getMinutes();
@@ -8,7 +8,6 @@
     
 /* console.log( "period ("+(d11)+":"+d11m+") "+"to ("+(d22)+":"+d22m+") "+"sum ("+"1.00"+")");
 console.log( "break "+"("+(d22)+":"+(d22m)+")"+" to "+"("+(d33)+":"+(d33m)+")"+" sum ("+"0.25"+")\n");
-
 console.log( "period ("+(d33)+":"+d33m+") "+"to ("+(d44)+":"+d44m+") "+"sum ("+"1.00"+")");
 console.log( "break "+"("+(d44)+":"+(d44m)+")"+" to "+"("+(d55)+":"+(d55m)+")"+" sum ("+"0.25"+")\n");  */
 // afternoon
