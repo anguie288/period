@@ -1,3 +1,4 @@
+function diff(d1, d2) {var diff = d2 - d1;var diffInHours = diff/1000/60/60;return Math.abs(diffInHours); }d1=d01.getTime();d2=d01.getTime();d3=d03.getTime();d4=d04.getTime();d5=d05.getTime();              
 // Military Add 2 hrs  5-17
     /*from 1-2*/d01= new Date("May 20, 2020 12:30:00"); d11 = d01.getHours();d11m= d01.getMinutes();//d1=d01.getTime();d1=new Date(2020,05,18); 
     /*from 1-2*/var d02=new Date(d01);d02.setMinutes(d02.getMinutes() + 60); var d22=d02.getHours(); var d22m=d02.getMinutes();
@@ -11,11 +12,11 @@ console.log( "break--"+"("+(d22)+":"+(d22m)+")"+" to "+"("+(d33)+":"+(d33m)+")"+
 console.log( "period*("+(d33)+":"+d33m+") "+"to ("+(d44)+":"+d44m+") "+"sum ("+"1.00"+")");
 console.log( "break--"+"("+(d44)+":"+(d44m)+")"+" to "+"("+(d55)+":"+(d55m)+")"+" sum ("+"0.25"+")\n");  */
 // afternoon
-console.log( "period*("+(d11-12)+":"+d11m+") "+"to ("+(d22-12)+":"+d22m+") "+"sum ("+"1.00"+")");
-console.log( "break--"+"("+(d22-12)+":"+(d22m)+")"+" to "+"("+(d33-12)+":"+(d33m)+")"+" sum ("+"0.25"+")\n");
+console.log( "period*("+(d11-12)+":"+d11m+") "+"to ("+(d22-12)+":"+d22m+") "+"sum ("+diff(d1, d2)+")");
+console.log( "break--"+"("+(d22-12)+":"+(d22m)+")"+" to "+"("+(d33-12)+":"+(d33m)+")"+" sum ("+diff(d2, d3)+")\n");
 
-console.log( "period*("+(d33-12)+":"+d33m+") "+"to ("+(d44-12)+":"+d44m+") "+"sum ("+"1.00"+")");
-console.log( "break--"+"("+(d44-12)+":"+(d44m)+")"+" to "+"("+(d55-12)+":"+(d55m)+")"+" sum ("+"0.25"+")\n");
+console.log( "period*("+(d33-12)+":"+d33m+") "+"to ("+(d44-12)+":"+d44m+") "+"sum ("+diff(d3, d4)+")");
+console.log( "break--"+"("+(d44-12)+":"+(d44m)+")"+" to "+"("+(d55-12)+":"+(d55m)+")"+" sum ("+diff(d4, d5)+")\n");
 
 /*  01 p.m. 1300  
     02 p.m. 1400
