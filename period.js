@@ -9,10 +9,10 @@ function diff(d1, d2) {var diff = d2 - d1;var diffInHours = diff/1000/60/60;retu
     
     d1=d01.getTime();d2=d02.getTime();d3=d03.getTime();d4=d04.getTime();d5=d05.getTime();
     
-/* console.log( "period*("+(d11)+":"+d11m+") "+"to ("+(d22)+":"+d22m+") "+"sum ("+"1.00"+")");
-console.log( "break--"+"("+(d22)+":"+(d22m)+")"+" to "+"("+(d33)+":"+(d33m)+")"+" sum ("+"0.25"+")\n");
-console.log( "period*("+(d33)+":"+d33m+") "+"to ("+(d44)+":"+d44m+") "+"sum ("+"1.00"+")");
-console.log( "break--"+"("+(d44)+":"+(d44m)+")"+" to "+"("+(d55)+":"+(d55m)+")"+" sum ("+"0.25"+")\n");  */
+/* console.log( "period*("+(d11)+":"+d11m+") "+"to ("+(d22)+":"+d22m+") "+"sum ("+diff(d1, d2)+")");
+console.log( "break--"+"("+(d22)+":"+(d22m)+")"+" to "+"("+(d33)+":"+(d33m)+")"+" sum ("+diff(d2, d3)+")\n");
+console.log( "period*("+(d33)+":"+d33m+") "+"to ("+(d44)+":"+d44m+") "+"sum ("+diff(d3, d4)+")");
+console.log( "break--"+"("+(d44)+":"+(d44m)+")"+" to "+"("+(d55)+":"+(d55m)+")"+" sum ("+diff(d4, d5)+")\n");  */
 // afternoon
 console.log( "period*("+(d11-12)+":"+d11m+") "+"to ("+(d22-12)+":"+d22m+") "+"sum ("+diff(d1, d2)+")");
 console.log( "break--"+"("+(d22-12)+":"+(d22m)+")"+" to "+"("+(d33-12)+":"+(d33m)+")"+" sum ("+diff(d2, d3)+")\n");
